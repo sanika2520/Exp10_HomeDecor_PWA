@@ -49,16 +49,45 @@
 // export default HomePage;
 
 
+// import React from "react";
+// import { useCart } from "../context/CartContext";
+// import "../styles/styles.css";
+
+// const products = [
+//   { id: 1, name: "Wooden Dining Table", price: "₹6,999", image: "/images/image2.jpg" },
+//   { id: 2, name: "Modern Sofa Set", price: "₹7,999", image: "/images/image1.jpg" },
+//   { id: 3, name: "Luxury Bed", price: "₹14,499", image: "/images/image3.jpg" },
+//   { id: 4, name: "Decorative Lamp", price: "₹3,799", image: "/images/image4.webp" },
+// ];
+
+// const HomePage = () => {
+//   const { addToCart } = useCart();
+
+//   return (
+//     <div className="home-container">
+//       <h1>Home Decor & Furniture</h1>
+//       <div className="product-list">
+//         {products.map((product) => (
+//           <div key={product.id} className="product-card">
+//             <img src={product.image} alt={product.name} />
+//             <h3>{product.name}</h3>
+//             <p>{product.price}</p>
+//             <button onClick={() => addToCart(product)}>Add to Cart</button>
+//           </div>
+//         ))}
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default HomePage;
+
+
+
 import React from "react";
 import { useCart } from "../context/CartContext";
+import products from "../data/products";
 import "../styles/styles.css";
-
-const products = [
-  { id: 1, name: "Wooden Dining Table", price: "₹6,999", image: "/images/image2.jpg" },
-  { id: 2, name: "Modern Sofa Set", price: "₹7,999", image: "/images/image1.jpg" },
-  { id: 3, name: "Luxury Bed", price: "₹14,499", image: "/images/image3.jpg" },
-  { id: 4, name: "Decorative Lamp", price: "₹3,799", image: "/images/image4.webp" },
-];
 
 const HomePage = () => {
   const { addToCart } = useCart();
